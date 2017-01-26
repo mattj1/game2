@@ -1,8 +1,8 @@
 {
-    "id": "aca116e7-c850-40db-9f8d-babc94a1bee8",
+    "id": "5f780e31-44f0-4831-b310-eb373dd66dd9",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ProcessCollision",
+    "name": "mgRoom_AdjacentFill",
     "IsCompatibility": false,
     "IsDnD": false
 }

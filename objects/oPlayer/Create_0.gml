@@ -1,5 +1,5 @@
 {
-	player_speed = 1.0;
+	player_speed = PLAYER_SPEED;
 	dx = 0;
 	dy = 0;
 	dir = DIR_LEFT;
