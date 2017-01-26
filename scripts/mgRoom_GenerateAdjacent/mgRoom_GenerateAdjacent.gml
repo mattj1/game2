@@ -20,23 +20,23 @@
 			case 0:
 				if(room0DigDirection == 1) continue;
 				
-				room1X = room0X + irandom_range(0, room0W - 3);
+				room1X = room0X + irandom_range(-3, room0W - 3);
 				room1Y = room0Y - room1H + 1;
 			break;
 			case 1:
 				if(room0DigDirection == 0) continue;
-				room1X = room0X + irandom_range(0, room0W - 3);
+				room1X = room0X + irandom_range(-3, room0W - 3);
 				room1Y = room0Y + room0H - 1;
 			break;
 			case 2:
 				if(room0DigDirection == 3) continue;
 				room1X = room0X - room1W + 1;
-				room1Y = room0Y + irandom_range(0, room0H - 3);
+				room1Y = room0Y + irandom_range(-3, room0H - 3);
 			break;
 			case 3:
 				if(room0DigDirection == 2) continue;
 				room1X = room0X + room0W - 1;
-				room1Y = room0Y + irandom_range(0, room0H - 3);
+				room1Y = room0Y + irandom_range(-3, room0H - 3);
 			break;
 		}
 		

@@ -7,6 +7,14 @@
 	var roomW = _room[? "w"];
 	var roomH = _room[? "h"];
 	
+	var w = ds_grid_width(grid);
+	var h = ds_grid_height(grid);
+	
+	if(roomX < 0 || roomX + roomW >= w)
+		return false;
+	
+	if(roomY < 0 || roomY + roomH >= h)
+		return false;
 	
 	for(var j = roomY; j < roomY + roomH; j++) {
 		for(var i = roomX; i < roomX + roomW; i++ ) {
