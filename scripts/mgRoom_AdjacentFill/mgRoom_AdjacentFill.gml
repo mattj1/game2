@@ -35,14 +35,14 @@
 			if( (j == prevRoomTop || j == prevRoomBottom) 
 				&& (i > prevRoomLeft && i < prevRoomRight)
 				&& (i > roomLeft && i < roomRight)) {
-					o2 = 0;
+					o2 = 3;
 				}
 				
 			if( (i == prevRoomLeft || i == prevRoomRight)
 				&& (j > prevRoomTop && j < prevRoomBottom) 
 				&& (j > roomTop && j < roomBottom) ) {
 				
-				o2 = 0;
+				o2 = 3;
 			}
 			
 			// Regular room bounds
@@ -53,7 +53,4 @@
 			ds_grid_set(grid, i, j, o2);
 		}
 	}
-
-//	ds_grid_set_region(grid, roomX, roomY, roomX + roomW, roomY + roomH, 2);
-//	ds_grid_set_region(grid, roomX + 1, roomY + 1, roomX + roomW - 1, roomY + roomH - 1, 0);
 }

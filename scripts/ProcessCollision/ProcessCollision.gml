@@ -27,7 +27,7 @@
 			// collision data never has flips etc...
 			var tile1 = tilemap_get(WallMap, tx,ty1 )& tile_index_mask;
 			var tile2 = tilemap_get(WallMap, tx,ty2 )& tile_index_mask;
-			if(( tile1!=0 ) || (tile2!=0)) {
+			if(( tile1==1 ) || (tile2==1)) {
 				x = (x&~(TILE_SIZE-1))+_left;
 			}
 		}
@@ -44,7 +44,7 @@
 			// collision data never has flips etc...
 			var tile1 = tilemap_get(WallMap, tx1,ty )& tile_index_mask;
 			var tile2 = tilemap_get(WallMap, tx2,ty )& tile_index_mask;
-			if(( tile1!=0 ) || (tile2!=0)) {
+			if(( tile1==1 ) || (tile2==1)) {
 				y = (ty<<TILE_SHIFT)- _bottom - 1;
 			}
 		}
@@ -60,7 +60,7 @@
 			// collision data never has flips etc...
 			var tile1 = tilemap_get(WallMap, tx1,ty )& tile_index_mask;
 			var tile2 = tilemap_get(WallMap, tx2,ty )& tile_index_mask;
-			if(( tile1!=0 ) || (tile2!=0)) {
+			if(( tile1==1 ) || (tile2==1)) {
 				//y = (ty<<TILE_SHIFT)+TILE_SIZE+_top+1;
 				y = (y & ~(TILE_SIZE-1)) + _top;
 			}
@@ -81,7 +81,7 @@
 			// collision data never has flips etc...
 			var tile1 = tilemap_get(WallMap, tx,ty1 )& tile_index_mask;
 			var tile2 = tilemap_get(WallMap, tx,ty2 )& tile_index_mask;
-			if(( tile1!=0 ) || (tile2!=0)) {
+			if(( tile1==1 ) || (tile2==1)) {
 				//x = (tx<<TILE_SHIFT)-TILE_SIZE+(TILE_SIZE-_right);
 				x = (tx<<TILE_SHIFT)-_right - 1;
 			}

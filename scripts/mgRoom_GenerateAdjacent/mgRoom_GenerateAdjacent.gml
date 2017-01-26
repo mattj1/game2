@@ -1,6 +1,7 @@
 {
 	var grid = argument0;
 	var _room = argument1;
+	var _maxAttempts = argument2;
 
 	var room0X = _room[? "x"];
 	var room0Y = _room[? "y"];	
@@ -9,11 +10,20 @@
 	
 	var room0DigDirection = _room[? "digDirection"];
 	
-	var room1X, room1Y;
+	var room1X, room1Y, room1W, room1H;
+	var attempts = 0;
 	
-	while(true) {
-		var room1W = irandom_range(6,12);
-		var room1H = irandom_range(6,12);
+	while(attempts < _maxAttempts) {
+		attempts ++;
+		
+		if(irandom_range(0,4) == 0) {
+			// large room
+			room1W = irandom_range(13,24);
+			room1H = irandom_range(6,12);
+		} else {
+			room1W = irandom_range(8,12);
+			room1H = irandom_range(6,12);
+		}
 		
 		var dir = irandom_range(0, 3);
 		
@@ -72,4 +82,6 @@
 		// Clean up and try again
 		ds_map_destroy(_room1);
 	}
+	
+	return pointer_null;
 }
