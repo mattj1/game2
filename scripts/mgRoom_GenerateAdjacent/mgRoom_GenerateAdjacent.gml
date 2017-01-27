@@ -38,7 +38,7 @@
 		}
 		
 		var g = irandom_range( -(f - 5), e - 5);
-		
+		show_debug_message()
 		switch(dir) {
 			case 0:
 				if(room0DigDirection == 1) continue;
