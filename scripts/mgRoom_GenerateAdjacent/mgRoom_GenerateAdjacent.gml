@@ -38,7 +38,7 @@
 		}
 		
 		var g = irandom_range( -(f - 5), e - 5);
-		//show_debug_message()
+		
 		switch(dir) {
 			case 0:
 				if(room0DigDirection == 1) continue;
@@ -74,8 +74,13 @@
 		_room1[? "previousRoomH"] = room0H;
 		
 		if(mgRoom_CanPlace(grid, _room1)) {
-			show_debug_message("g");
-			show_debug_message(g);
+			var adjacentRooms0 = _room[? "adjacentRooms"];
+			ds_list_add(adjacentRooms0, _room1);
+			
+			var adjacentRooms1 = _room1[? "adjacentRooms"];
+			ds_list_add(adjacentRooms1, _room);
+			
+			//show_debug_message(string(-(f-5)) + " - " + string(e-5) + " -> " + string(g));
 			return _room1;
 		}
 		

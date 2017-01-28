@@ -1,8 +1,9 @@
 {
 	TileMap = layer_tilemap_get_id("Tiles_1");
+	global.TileMap = TileMap;
 	
 	WallMap = layer_tilemap_get_id("CollisionLayer");
-	layer_set_visible("CollisionLayer",true);		// just in case I've left them on!
+	layer_set_visible("CollisionLayer", false);		// just in case I've left them on!
 	global.WallMap = WallMap;
 	#macro DIR_STOP		0
 	#macro DIR_UP		1
@@ -11,22 +12,23 @@
 	#macro DIR_RIGHT	8
 	#macro DIR_DEAD		16
 	
-	#macro PLAYER_SPEED 4.0
+	#macro PLAYER_SPEED 2.0
 	
 	//camera_set_view_size(view_camera[0], 320 * 4, 176 * 4);
 	
 	var w = tilemap_get_width(TileMap);
 	var h = tilemap_get_height(TileMap);
 	
-	// Set a tile value at 0,0
-	// tilemap_set(WallMap, 1, 0, 0);
 	var goodRooms = ds_queue_create();
+	var allRooms = ds_list_create();
 	
 	var grid = ds_grid_create(w, h);
+	global.level = grid;
 	ds_grid_clear(grid, 1);
 	
 	var lastRoom = mgRoom_New(10, 10, 10, 10);
 	ds_queue_enqueue(lastRoom);
+	ds_list_add(allRooms, lastRoom);
 	
 	mgRoom_BasicFill(grid, lastRoom);
 	
@@ -41,8 +43,8 @@
 		mgRoom_AdjacentFill(grid, newRoom);
 		
 		ds_queue_enqueue(goodRooms, newRoom);
-		
-		//ds_map_destroy(lastRoom);
+		ds_list_add(allRooms, newRoom);
+				
 		lastRoom = newRoom;
 	}
 	
@@ -62,11 +64,10 @@
 			mgRoom_AdjacentFill(grid, newRoom);
 		
 			ds_queue_enqueue(goodRooms, newRoom);
-		
+			ds_list_add(allRooms, newRoom);
+			
 			lastRoom = newRoom;
 		}
-		
-		ds_map_destroy(lastRoom2);	
 	}
 	
 	for(var j = 0; j < h; j++) {
@@ -96,9 +97,23 @@
 					_solid = 2;
 				}
 				
+				// None of the map is revealed yet.
+				ob2 = 2;
+				
 				tilemap_set(TileMap, ob2, i, j);
 				tilemap_set(WallMap, _solid, i, j);
 			}		
 		}
 	}
+	
+	// Place the player inside room 0
+	show_debug_message("placing player in first room");
+	var firstRoom = allRooms[| 0];
+	
+	var p = instance_find(oPlayer, 0);
+	p.x = firstRoom[? "x"] * 8 + firstRoom[? "w"] * 8 / 2;
+	p.y = firstRoom[? "y"] * 8 + firstRoom[? "h"] * 8 / 2;
+	p.currentRoom = firstRoom;
+
+	levelRoom_Reveal(firstRoom);
 }

@@ -51,4 +51,24 @@ if(dx != 0) {
 if(dy != 0) {
 	ProcessCollision(id, 0,dy, _right, _left, _top, _bottom );
 }
+
+	if(dx != 0 || dy != 0) {
+		// Room visibility (Fog of war)
+		if(!is_undefined(currentRoom)) {
+
+			var adjacentRooms = currentRoom[? "adjacentRooms"];
+			var numAdjacentRooms = ds_list_size(adjacentRooms)
+	
+			for(var i = 0; i < numAdjacentRooms; i++) {
+				var _room = adjacentRooms[| i];
+		
+				if(levelRoom_ContainsObject(_room, self)) {
+					currentRoom = _room;
+					levelRoom_Reveal(_room);
+					break;
+				}
+			}
+		}
+	}
+	
 }
