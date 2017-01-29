@@ -15,7 +15,7 @@
 	#macro PLAYER_SPEED 2.0
 	
 	// Message
-	message = "";
+	messages = ds_list_create();
 	messageTime = 0;
 	
 	//camera_set_view_size(view_camera[0], 320 * 4, 176 * 4);

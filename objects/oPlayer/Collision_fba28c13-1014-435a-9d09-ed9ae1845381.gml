@@ -6,6 +6,5 @@
 	levelRoom_removeObject(other.currentRoom, other);
 	instance_destroy(other);
 	
-	controller.messageTime = 90;
-	controller.message = string(goldAmount) + " GOLD!";
+	hud_showMessage(string(goldAmount) + " GOLD");
 }
