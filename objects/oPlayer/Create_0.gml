@@ -6,6 +6,8 @@
 	WallMap = global.WallMap;
 	gold = 0;
 	
+	identifiedScrolls = 0;
+	
 	//currentRoom = pointer_null;
 }
 	

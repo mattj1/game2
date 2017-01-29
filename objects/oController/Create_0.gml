@@ -128,7 +128,8 @@
 			if(irandom_range(0,100) < 10) {
 				var _scroll = instance_create_depth(0,0,p.depth, oScroll);
 				levelRoom_placeObjectRandom(_room, _scroll);
-				_scroll.visible = false;			
+				_scroll.visible = false;		
+				_scroll.scrollType = irandom_range(0,10);	
 			}
 			
 			if(irandom_range(0,100) < 20) {

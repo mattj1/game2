@@ -39,7 +39,7 @@
 		var numMessages = ds_list_size(messages);
 		for(var i = 0; i < numMessages; i++) {
 		
-			draw_text(display_get_gui_width() * 0.75, 20 + i * 16, messages[| i]);
+			draw_text(display_get_gui_width() * 0.50, 20 + i * 16, messages[| i]);
 		}
 
 		
