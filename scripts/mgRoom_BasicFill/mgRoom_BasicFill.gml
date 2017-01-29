@@ -23,5 +23,4 @@
 			ds_grid_set(grid, i, j, o2);
 		}
 	}
-	
 }

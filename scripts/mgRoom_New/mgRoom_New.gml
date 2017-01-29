@@ -11,6 +11,7 @@
 	ds_map_add(_obj, "h", _h);
 	
 	ds_map_add(_obj, "adjacentRooms", ds_list_create());
+	ds_map_add(_obj, "objects", ds_list_create());
 	
 	_obj[? "digDirection"] = -1;
 	

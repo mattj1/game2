@@ -115,5 +115,22 @@
 	p.y = firstRoom[? "y"] * 8 + firstRoom[? "h"] * 8 / 2;
 	p.currentRoom = firstRoom;
 
+
+	var numRooms = ds_list_size(allRooms);
+	for(var i = 0; i < numRooms; i++) {
+		var _room = allRooms[| i];
+		if(irandom_range(0,10) < 2) {
+			var _scroll = instance_create_depth(
+				0,0,
+				p.depth, oScroll);
+			
+			mgRoom_placeObjectRandom(_room, _scroll);
+			
+			_scroll.visible = false;			
+		}
+	}
+
+	
+
 	levelRoom_Reveal(firstRoom);
 }

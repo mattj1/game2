@@ -6,6 +6,8 @@
 	var roomW = _room[? "w"];
 	var roomH = _room[? "h"];
 	
+	var roomObjects = _room[? "objects"];
+	
 	var digDirection = _room[? "digDirection"];
 	
 	for(var j = roomY; j < roomY + roomH; j++) {
@@ -39,5 +41,11 @@
 				tilemap_set(global.TileMap, ob2, i, j);
 			}
 		}
+	}
+	
+	var numObjects = ds_list_size(roomObjects);
+	for(var i = 0; i < numObjects; i++) {
+		var _obj = roomObjects[| i];
+		_obj.visible = true;
 	}
 }
