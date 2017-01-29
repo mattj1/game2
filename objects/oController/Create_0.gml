@@ -14,6 +14,10 @@
 	
 	#macro PLAYER_SPEED 2.0
 	
+	// Message
+	message = "";
+	messageTime = 0;
+	
 	//camera_set_view_size(view_camera[0], 320 * 4, 176 * 4);
 	
 	var w = tilemap_get_width(TileMap);
@@ -119,14 +123,19 @@
 	var numRooms = ds_list_size(allRooms);
 	for(var i = 0; i < numRooms; i++) {
 		var _room = allRooms[| i];
-		if(irandom_range(0,10) < 2) {
-			var _scroll = instance_create_depth(
-				0,0,
-				p.depth, oScroll);
+		
+		for(var j = 0; j < 2; j++) {
+			if(irandom_range(0,100) < 10) {
+				var _scroll = instance_create_depth(0,0,p.depth, oScroll);
+				levelRoom_placeObjectRandom(_room, _scroll);
+				_scroll.visible = false;			
+			}
 			
-			mgRoom_placeObjectRandom(_room, _scroll);
-			
-			_scroll.visible = false;			
+			if(irandom_range(0,100) < 20) {
+				var _obj = instance_create_depth(0,0,p.depth, oChest);
+				levelRoom_placeObjectRandom(_room, _obj);
+				_obj.visible = false;			
+			}
 		}
 	}
 

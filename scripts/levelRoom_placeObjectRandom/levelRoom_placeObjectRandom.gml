@@ -9,11 +9,11 @@
 
 	var roomObjects = _room[? "objects"];
 	
-	var tx = irandom_range(1, roomW - 1);
-	var ty = irandom_range(1, roomH - 1);
+	var tx = irandom_range(2, roomW - 2);
+	var ty = irandom_range(2, roomH - 2);
 	
-	_obj.x = roomX * 8 + tx * 8 - 4;
-	_obj.y = roomY * 8 + ty * 8 - 4;
+	_obj.x = roomX * 8 + tx * 8;
+	_obj.y = roomY * 8 + ty * 8;
 	
 	_obj.currentRoom = _room;
 	

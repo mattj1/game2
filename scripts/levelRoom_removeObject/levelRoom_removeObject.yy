@@ -1,8 +1,8 @@
 {
-    "id": "8fa6dd8c-e369-49b7-8fd0-73c084be32f1",
+    "id": "88e84abf-667e-4161-a145-83499bff17d1",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "mgRoom_placeObjectRandom",
+    "name": "levelRoom_removeObject",
     "IsCompatibility": false,
     "IsDnD": false
 }
