@@ -1,7 +1,7 @@
 {
     "id": "a7940508-e869-42c9-9671-c22db106b0c6",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_player_stand_down",
     "For3D": false,
     "HTile": false,

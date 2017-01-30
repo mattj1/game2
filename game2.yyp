@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "4abc0d2b-a6c0-4181-ab87-91d5b970299a",
+            "Value": {
+                "id": "55bf3ae7-4fdf-4fc5-96e2-0d1d10c0e4a2",
+                "resourcePath": "views\\4abc0d2b-a6c0-4181-ab87-91d5b970299a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "50dd7d09-f1b4-4b10-889c-687e521289c9",
             "Value": {
                 "id": "3df71479-800f-4793-987c-c4aeaf2a1f5c",
@@ -235,6 +243,14 @@
             "Value": {
                 "id": "d3b16466-ded8-420d-a907-1aff3f512ceb",
                 "resourcePath": "views\\83e646a9-1221-4994-99f9-ffa94db39d14.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "85b6c2a9-39be-456a-be69-c64c2c891c14",
+            "Value": {
+                "id": "5ad4447c-880d-4053-9e07-99cdd099cbe6",
+                "resourcePath": "views\\85b6c2a9-39be-456a-be69-c64c2c891c14.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "e7f889fa-8836-4f5a-be9a-aee19647f3f7",
+            "Value": {
+                "id": "b9ed51ec-50fd-43f3-94ad-7855a36d9a10",
+                "resourcePath": "views\\e7f889fa-8836-4f5a-be9a-aee19647f3f7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ed02b0c8-9180-4f58-9b99-f3214e319f2c",
             "Value": {
                 "id": "62d10605-a380-42d0-861a-7877ef3faf4a",
@@ -460,6 +484,14 @@
                 "id": "1bc329d9-7071-4fc9-8fb0-e5e8d8728946",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fca7066c-7dbc-4a4b-b6f3-1f4b3803123b",
+            "Value": {
+                "id": "490c86b9-166f-4da8-8247-03e38a042726",
+                "resourcePath": "sprites\\spr_player_attack_sword_right\\spr_player_attack_sword_right.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],

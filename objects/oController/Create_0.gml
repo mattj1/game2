@@ -11,7 +11,7 @@
 	#macro DIR_LEFT		4
 	#macro DIR_RIGHT	8
 	#macro DIR_DEAD		16
-	
+		
 	#macro PLAYER_SPEED 2.0
 	
 	// Message
