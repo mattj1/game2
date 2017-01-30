@@ -47,10 +47,10 @@
             }
         },
         {
-            "Key": "12fff281-6918-47e7-8149-49087eabf268",
+            "Key": "16577bff-7a33-49ba-93d0-5b15eb9fb26e",
             "Value": {
-                "id": "edbb2c84-e379-4068-994b-2322a0788108",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "id": "00cd0896-beb3-4132-8f5d-105bbb5f3b65",
+                "resourcePath": "sprites\\spr_player_stand_up\\spr_player_stand_up.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -119,11 +119,27 @@
             }
         },
         {
+            "Key": "453b111f-22ca-4974-bd94-c1db90742c3b",
+            "Value": {
+                "id": "7b9b2902-28e7-4f9f-ba05-3ee1ed9c0f49",
+                "resourcePath": "sprites\\spr_player_walk_down\\spr_player_walk_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4662172d-d871-41dd-9f12-fdb257d4c9ab",
             "Value": {
                 "id": "747b7c47-cb0b-49cf-9f08-1c301b0b95c8",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "49fbb96d-b61a-4975-ab8f-b2741c5f946d",
+            "Value": {
+                "id": "285f3a2f-f334-472a-b889-da6a6b51a305",
+                "resourcePath": "views\\49fbb96d-b61a-4975-ab8f-b2741c5f946d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "8fca3873-ccd4-4bb8-a6e2-0cf92e5edc6c",
+            "Value": {
+                "id": "f253eebc-a4cc-4b88-9c78-a7826b47947c",
+                "resourcePath": "sprites\\spr_player_stand_right\\spr_player_stand_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93b0049b-c2cc-4e7b-92dc-dfa35f5b015d",
             "Value": {
                 "id": "354b0abe-a7d9-466e-b7cb-4aa363da04dd",
@@ -271,6 +295,14 @@
             }
         },
         {
+            "Key": "9facb593-5ff7-4724-b78a-013b9ff66a6a",
+            "Value": {
+                "id": "1747acae-9741-4aa6-9f74-f0d7936a8f62",
+                "resourcePath": "sprites\\spr_player_walk_up\\spr_player_walk_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a0f43acc-253f-4ccb-8872-a8d312d4006c",
             "Value": {
                 "id": "ed52e43c-ba9e-4c97-a406-32be66e5653b",
@@ -284,6 +316,14 @@
                 "id": "a0b65d6a-a053-4706-acbc-2c6ace005c9c",
                 "resourcePath": "views\\a24aa6a6-ba69-4e90-a46e-6bf4ff97c264.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a7940508-e869-42c9-9671-c22db106b0c6",
+            "Value": {
+                "id": "3f3a48a6-b4c8-4af3-8ffa-7a9c15ead47a",
+                "resourcePath": "sprites\\spr_player_stand_down\\spr_player_stand_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -335,6 +375,22 @@
             }
         },
         {
+            "Key": "c7f47c69-09c0-4ad7-99d2-4db40021c9b3",
+            "Value": {
+                "id": "3ea4344c-ee9d-4df6-b254-3fc601b6349f",
+                "resourcePath": "views\\c7f47c69-09c0-4ad7-99d2-4db40021c9b3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c9d02e75-5a51-4734-891d-0c2d5d166a6a",
+            "Value": {
+                "id": "f9c60320-e07e-4c24-b4d3-36c77660dc0f",
+                "resourcePath": "sprites\\spr_player_walk_right\\spr_player_walk_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cb05d99b-bc39-44d4-9d6a-00599c61d07c",
             "Value": {
                 "id": "9fdfc807-994b-4734-bd87-a25ed9dacd9d",
@@ -348,6 +404,14 @@
                 "id": "287daebb-1573-4de8-863e-8fb1a51288c9",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd2333e4-c29e-4174-b157-b8f893dd66b2",
+            "Value": {
+                "id": "43530baa-a53c-4bcc-8c3b-65697dbeaee3",
+                "resourcePath": "views\\cd2333e4-c29e-4174-b157-b8f893dd66b2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

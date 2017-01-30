@@ -2,7 +2,8 @@
 	player_speed = PLAYER_SPEED;
 	dx = 0;
 	dy = 0;
-	dir = DIR_LEFT;
+	dir = DIR_RIGHT;
+	facingDir = DIR_RIGHT;
 	WallMap = global.WallMap;
 	gold = 0;
 	
