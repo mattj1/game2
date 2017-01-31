@@ -31,7 +31,7 @@
 	ds_grid_clear(grid, 1);
 	
 	var lastRoom = mgRoom_New(10, 10, 10, 10);
-	ds_queue_enqueue(lastRoom);
+	ds_queue_enqueue(goodRooms, lastRoom);
 	ds_list_add(allRooms, lastRoom);
 	
 	mgRoom_BasicFill(grid, lastRoom);

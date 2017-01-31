@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1f65ff87-8200-4758-b0b1-7bc83fa2235e",
+            "Value": {
+                "id": "37254245-c557-4f43-a3f0-0feda5927aed",
+                "resourcePath": "sprites\\spr_player_attack_sword_down\\spr_player_attack_sword_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26c732bc-2403-4309-81be-0412dfb92432",
             "Value": {
                 "id": "afb2a2f3-ab7b-4c77-8d23-1d2ea25eff61",
@@ -148,6 +156,14 @@
                 "id": "55bf3ae7-4fdf-4fc5-96e2-0d1d10c0e4a2",
                 "resourcePath": "views\\4abc0d2b-a6c0-4181-ab87-91d5b970299a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4babe4d8-76ab-462e-aec3-2cc89339a548",
+            "Value": {
+                "id": "ede2beb5-cca4-4a43-95c7-b951c7a9924c",
+                "resourcePath": "objects\\oDamage_Sword\\oDamage_Sword.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -411,6 +427,14 @@
             "Value": {
                 "id": "f9c60320-e07e-4c24-b4d3-36c77660dc0f",
                 "resourcePath": "sprites\\spr_player_walk_right\\spr_player_walk_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c9f86731-9223-48dc-a480-1b49cda1c9fb",
+            "Value": {
+                "id": "e568769f-7344-484c-815b-5813c743baf8",
+                "resourcePath": "sprites\\sprite_damageVolume\\sprite_damageVolume.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -6,10 +6,13 @@ dir = 0;
 	var nextFacingDir = -1;
 	
 	if( keyboard_check(ord("Z"))) {
-		if(state == STATE_STANDING || state == STATE_WALKING) 
+		if(state == STATE_STANDING || state == STATE_WALKING) {
 			state = STATE_ATTACKING;
 			
-		attacking = true;
+			var damageObject = instance_create_depth(x + 10, y, depth, oDamage_Sword);
+			damageObject.image_xscale = 1.5;
+			damageObject.image_yscale = 1.2;
+		}
 	}
 		
 		
@@ -120,6 +123,9 @@ dir = 0;
 				case DIR_UP:
 					sprite_index = spr_player_attack_sword_up;
 					break;
+				case DIR_DOWN:
+					sprite_index = spr_player_attack_sword_down;
+					break;
 				case DIR_LEFT:
 					image_xscale = -1;
 					sprite_index = spr_player_attack_sword_right;
@@ -127,12 +133,9 @@ dir = 0;
 				case DIR_RIGHT:
 					sprite_index = spr_player_attack_sword_right;
 				break;
-				default:
-				sprite_index = spr_player_attack_sword_right;
-				break;
-				
-					
 			}
+			
+			
 			
 		break;
 	
