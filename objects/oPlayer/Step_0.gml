@@ -117,6 +117,9 @@ dir = 0;
 		break;
 		case STATE_ATTACKING:
 			switch(facingDir) {
+				case DIR_UP:
+					sprite_index = spr_player_attack_sword_up;
+					break;
 				case DIR_LEFT:
 					image_xscale = -1;
 					sprite_index = spr_player_attack_sword_right;
