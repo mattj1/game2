@@ -137,10 +137,17 @@
 				levelRoom_placeObjectRandom(_room, _obj);
 				_obj.visible = false;			
 			}
+			
+			if(irandom_range(0,100) < 20) {
+				var _obj = instance_create_depth(0,0,p.depth, oMonster);
+				levelRoom_placeObjectRandom(_room, _obj);
+				_obj.visible = false;			
+			}	
 		}
 	}
 
-	
+	var _obj = instance_create_depth(0,0,p.depth, oMonster);
+	levelRoom_placeObjectRandom(allRooms[| 0], _obj);
 
 	levelRoom_Reveal(firstRoom);
 }

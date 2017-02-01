@@ -8,10 +8,9 @@ dir = 0;
 	if( keyboard_check(ord("Z"))) {
 		if(state == STATE_STANDING || state == STATE_WALKING) {
 			state = STATE_ATTACKING;
-			
-			var damageObject = instance_create_depth(x + 10, y, depth, oDamage_Sword);
-			damageObject.image_xscale = 1.5;
-			damageObject.image_yscale = 1.2;
+
+			//script_execute(player_attack, self, facingDir);
+			player_attack(self, facingDir);
 		}
 	}
 		
@@ -157,22 +156,17 @@ if(dy != 0) {
 
 	
 	if(dx != 0 || dy != 0) {
-		// Room visibility (Fog of war)
-		if(!is_undefined(currentRoom)) {
-
-			var adjacentRooms = currentRoom[? "adjacentRooms"];
-			var numAdjacentRooms = ds_list_size(adjacentRooms)
 	
-			for(var i = 0; i < numAdjacentRooms; i++) {
-				var _room = adjacentRooms[| i];
+		// Room visibility (Fog of war)
 		
-				if(levelRoom_ContainsObject(_room, self)) {
-					currentRoom = _room;
-					levelRoom_Reveal(_room);
-					break;
-				}
-			}
+		var nextRoom = object_UpdateCurrentRoom(self);
+		if(nextRoom != pointer_null) {
+		
+			// changed rooms
+			levelRoom_Reveal(nextRoom);	
+			
+			// TODO: Activate any monsters within range
+			
 		}
 	}
-	
 }

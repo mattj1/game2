@@ -1,7 +1,7 @@
 {
     "id": "1f65ff87-8200-4758-b0b1-7bc83fa2235e",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_player_attack_sword_down",
     "For3D": false,
     "HTile": false,

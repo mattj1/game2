@@ -43,6 +43,8 @@
 		}
 	}
 	
+	_room[? "isRevealed"] = true;
+	
 	var numObjects = ds_list_size(roomObjects);
 	for(var i = 0; i < numObjects; i++) {
 		var _obj = roomObjects[| i];
