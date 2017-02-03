@@ -13,6 +13,8 @@
 	var DEBUG_TILE = 2;
 	with( _inst )
 	{
+		var WallMap = global.WallMap;
+		
 		// Now move and do collision checks.
 		x += _dx;
 		y += _dy;
